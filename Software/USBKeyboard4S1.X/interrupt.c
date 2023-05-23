@@ -65,6 +65,7 @@ void __ISR(_EXTERNAL_4_VECTOR, IPL6SOFT) _INT4Interrupt()
     uint32_t bits;
     uint8_t *key;
 
+    IEC0bits.INT3IE = 0;
     IEC0bits.INT4IE = 0;
     IFS0bits.INT4IF = 0;
     
@@ -98,7 +99,9 @@ void __ISR(_EXTERNAL_4_VECTOR, IPL6SOFT) _INT4Interrupt()
         LAT_Y_N_CLR;
     }
 
+    IFS0bits.INT3IF = 0;
     IEC0bits.INT4IE = 1;
+    IEC0bits.INT3IE = 1;
 
 #ifdef Simulator
     __asm__("nop");
@@ -108,6 +111,7 @@ void __ISR(_EXTERNAL_4_VECTOR, IPL6SOFT) _INT4Interrupt()
 // HPP signal fall down
 void __ISR(_EXTERNAL_3_VECTOR, IPL6SOFT) _INT3Interrupt()
 {
+    IEC0bits.INT4IE = 0;
     IEC0bits.INT3IE = 0;
     IFS0bits.INT3IF = 0;
 
@@ -124,7 +128,9 @@ void __ISR(_EXTERNAL_3_VECTOR, IPL6SOFT) _INT3Interrupt()
         }
     }
 
+    IFS0bits.INT4IF = 0;
     IEC0bits.INT3IE = 1;
+    IEC0bits.INT4IE = 1;
 
 #ifdef Simulator
     __asm__("nop");
