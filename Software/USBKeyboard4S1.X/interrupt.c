@@ -50,6 +50,9 @@ void INTR_Init(void)
     IEC0bits.INT4IE = 1;
     IEC0bits.INT3IE = 1;
 //    IEC0bits.INT2IE = 1;
+
+    // LED
+    LAT_CAPS_LED = 0;
 }
 
 /// USB 
