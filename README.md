@@ -1,11 +1,13 @@
-# USBƒL[ƒ{[ƒh for “ú—§ MB-S1
+# USBã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ for æ—¥ç«‹ MB-S1
 
-## ƒtƒHƒ‹ƒ_\¬
+## ãƒ•ã‚©ãƒ«ãƒ€æ§‹æˆ
 
-    Board/ ......................... Šî”ÂİŒv
-      KiCad/ ....................... KiCad Version 6  ’ÊíŠî”Â(DIPƒ^ƒCƒv‚ğg—p)
-      EasyEDA/ ..................... EasyEDA 6.5      ¬Œ^Šî”Â(•\–ÊÀ‘•)
-    Software/ ...................... PICƒ}ƒCƒRƒ“—pƒ\ƒtƒgƒEƒFƒA
+    Board/ ......................... åŸºæ¿è¨­è¨ˆ
+      KiCad/ ....................... KiCad Version 6  é€šå¸¸åŸºæ¿(DIPã‚¿ã‚¤ãƒ—ã‚’ä½¿ç”¨)
+      EasyEDA/ ..................... EasyEDA 6.5      å°å‹åŸºæ¿(è¡¨é¢å®Ÿè£…)
+    Software/ ...................... PICãƒã‚¤ã‚³ãƒ³ç”¨ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢
+
+### [ãƒ©ã‚ºãƒ‘ã‚¤Picoç‰ˆã¯ã“ã¡ã‚‰](https://github.com/bml3mk5/USBKeyboard4S1_PiPico)
 
 -----
 # USBKeyboard for HITACHI MB-S1
@@ -17,3 +19,4 @@
       EasyEDA/ ..................... EasyEDA 6.5      Small board (using SMT type)
     Software/ ...................... Software for PIC micro controller
 
+### [Raspberry Pi Pico version is here](https://github.com/bml3mk5/USBKeyboard4S1_PiPico)
